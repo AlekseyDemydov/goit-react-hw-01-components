@@ -1,4 +1,5 @@
-import styles from "./history.module.css";
+import propTypes from "prop-types";
+import styles from "../css/history.module.css";
 function HistoryCard(props) {
   const historyList = props.dataHist.map((oneHist) => (
     <tr key={oneHist.id}>
@@ -20,5 +21,11 @@ function HistoryCard(props) {
     </table>
   );
 }
+HistoryCard.propTypes = {
+  id: propTypes.string,
+  type: propTypes.string,
+  amount: propTypes.string,
+  currency: propTypes.string,
+};
 
 export default HistoryCard;

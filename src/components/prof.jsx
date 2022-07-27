@@ -1,4 +1,5 @@
-import styles from "./prof.module.css";
+import propTypes from "prop-types";
+import styles from "../css/prof.module.css";
 export const User = (props) => {
   const { userData } = props;
   return (
@@ -30,4 +31,12 @@ export const User = (props) => {
       </ul>
     </div>
   );
+};
+
+User.propTypes = {
+  avatar: propTypes.string,
+  username: propTypes.string,
+  tag: propTypes.string,
+  location: propTypes.string,
+  stats: propTypes.object,
 };

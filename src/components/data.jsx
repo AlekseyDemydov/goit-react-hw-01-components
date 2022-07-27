@@ -1,4 +1,5 @@
-import styles from "./data.module.css";
+import propTypes from "prop-types";
+import styles from "../css/data.module.css";
 function DataCard(props) {
   const cardList = props.dataUp.map((oneIt) => (
     <li className={styles.item} key={oneIt.id}>
@@ -14,5 +15,11 @@ function DataCard(props) {
     </section>
   );
 }
+
+DataCard.propTypes = {
+  id: propTypes.string,
+  label: propTypes.string,
+  percentage: propTypes.number,
+};
 
 export default DataCard;

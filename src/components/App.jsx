@@ -1,14 +1,14 @@
-import { User } from "../components/prof/user-card";
-import userData from "./prof/user.json";
+import { User } from "./prof";
+import userData from "../data/prof.json";
 
-import DataCard from "./up-data/data-card";
-import dataUp from "./up-data/data.json";
+import DataCard from "./data";
+import dataUp from "../data/data.json";
 
-import FriendsCard from "./friends/list-friends";
-import dataFr from "./friends/friends.json";
+import FriendsCard from "./friends";
+import dataFr from "../data/friends.json";
 
-import HistoryCard from "./tran-history/history";
-import dataHist from "./tran-history/transactions.json";
+import HistoryCard from "./history";
+import dataHist from "../data/history.json";
 
 export const App = () => {
   return (
