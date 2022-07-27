@@ -1,3 +1,4 @@
+import styles from "./history.module.css";
 function HistoryCard(props) {
   const historyList = props.dataHist.map((oneHist) => (
     <tr key={oneHist.id}>
@@ -7,7 +8,7 @@ function HistoryCard(props) {
     </tr>
   ));
   return (
-    <table className="transaction-history">
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>

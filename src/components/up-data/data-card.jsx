@@ -1,15 +1,16 @@
+import styles from "./data.module.css";
 function DataCard(props) {
   const cardList = props.dataUp.map((oneIt) => (
-    <li className="item" key={oneIt.id}>
-      <span className="label">{oneIt.label}</span>
-      <span className="percentage">{oneIt.percentage.toString()} %</span>
+    <li className={styles.item} key={oneIt.id}>
+      <span className={styles.label}>{oneIt.label}</span>
+      <span className={styles.percentage}>{oneIt.percentage.toString()} %</span>
     </li>
   ));
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+    <section className={styles.statistics}>
+      <h2 className={styles.title}>Upload stats</h2>
 
-      <ul className="stat-list">{cardList}</ul>
+      <ul className={styles.statList}>{cardList}</ul>
     </section>
   );
 }

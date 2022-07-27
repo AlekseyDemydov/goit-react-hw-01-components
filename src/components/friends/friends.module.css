@@ -1,0 +1,21 @@
+.friendList{
+    margin-bottom: 20px;
+}
+.item{
+    padding: 10px 0;
+    box-shadow: 10px 5px 5px rgb(16 15 15);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(226, 222, 218);
+    
+}
+.item:not(:last-child){
+    margin-bottom: 10px;
+}
+.avatar{
+   margin-left: 15px;
+}
+.name{margin-left: 15px;
+    font-weight: 700;
+}

@@ -1,12 +1,18 @@
+import styles from "./friends.module.css";
 function FriendsCard(props) {
   const friendList = props.dataFr.map((oneFr) => (
-    <li className="item" key={oneFr.id}>
-      <span className="status">{oneFr.isOnline}</span>
-      <img className="avatar" src={oneFr.avatar} alt={oneFr.name} width="48" />
-      <p className="name">{oneFr.name}</p>
+    <li className={styles.item} key={oneFr.id}>
+      <span className={styles.status}>{oneFr.isOnline}</span>
+      <img
+        className={styles.avatar}
+        src={oneFr.avatar}
+        alt={oneFr.name}
+        width="48"
+      />
+      <p className={styles.name}>{oneFr.name}</p>
     </li>
   ));
-  return <ul className="friend-list">{friendList}</ul>;
+  return <ul className={styles.friendList}>{friendList}</ul>;
 }
 
 export default FriendsCard;

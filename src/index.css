@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+/* @import-normalize; bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -8,9 +8,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+li{
+  list-style: none;
+  
+}
+li,a,div,span,p,ul{
+  margin: 0;
+  padding: 0;
+  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
     
+}
+#root{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
