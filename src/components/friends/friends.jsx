@@ -1,5 +1,5 @@
-import styles from "../css/friends.module.css";
-import FriendsItem from "./part/friendsItem";
+import styles from "./friends.module.css";
+import FriendsItem from "./friendsItem";
 
 const FriendsCard = (props) => {
   const { dataFr } = props;

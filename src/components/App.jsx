@@ -1,22 +1,28 @@
-import { User } from "./prof";
-import userData from "../data/prof.json";
+import { Profile } from "./profile/profile";
+import user from "../data/profile.json";
 
-import DataCard from "./data";
-import dataUp from "../data/data.json";
+import Statistics from "./statistics/statistics";
+import stats from "../data/statistics.json";
 
-import FriendsCard from "./friends";
+import FriendsCard from "./friends/friends";
 import dataFr from "../data/friends.json";
 
-import HistoryCard from "./history";
-import dataHist from "../data/history.json";
+import HistoryCard from "./history/history";
+import transactions from "../data/history.json";
 
 export const App = () => {
   return (
     <div>
-      <User userData={userData} />
-      <DataCard dataUp={dataUp} />
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={stats} />
       <FriendsCard dataFr={dataFr} />
-      <HistoryCard dataHist={dataHist} />
+      <HistoryCard item={transactions} />
     </div>
   );
 };

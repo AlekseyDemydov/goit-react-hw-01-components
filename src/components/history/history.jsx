@@ -1,7 +1,7 @@
 import propTypes from "prop-types";
-import styles from "../css/history.module.css";
-function HistoryCard(props) {
-  const historyList = props.dataHist.map((oneHist) => (
+import styles from "./history.module.css";
+function HistoryCard({ item }) {
+  const historyList = item.map((oneHist) => (
     <tr key={oneHist.id}>
       <td>{oneHist.type}</td>
       <td>{oneHist.amount}</td>
